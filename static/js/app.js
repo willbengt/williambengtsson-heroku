@@ -1,10 +1,10 @@
 'use strict';   // See note about 'use strict'; below
 
-var myApp = angular.module('myApp', [
+var wbApp = angular.module('wbApp', [
  'ngRoute',
 ]);
 
-myApp.config(['$routeProvider',
+wbApp.config(['$routeProvider',
      function($routeProvider) {
          $routeProvider.
              when('/', {

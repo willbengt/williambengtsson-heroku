@@ -1,13 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
-    <script src="/static/js/app.js?x49983"></script>
+  <head>
+    <title>william Bengtsson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link href="/css/xeditable.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="/static/css/style.css?x49983" />
-    </head>
-    <body ng-app="myApp">
-        <hr/>
-       <div ng-view></div>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <!--<script src="/js/xeditable.js"></script>-->
+    <script src="/static/js/app.js?x49983"></script>
+  </head>
+  <body ng-app="wbApp">
+    <!--<div class="container" ng-controller="NavbarCtrl">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">William Bengtsson</a>
+        </div>
+        <div class="navbar-collapse collapse" uib-collapse="isCollapsed">
+          <ul class="nav navbar-nav navbar-right">
+            <li uib-dropdown>
+            <a href="" uib-dropdown-toggle>
+              Coding Space <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+              <li><a href="/codingspace/ml">Machine Learning</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>-->
+    <div>
+      <div class="container-fluid">
+        <div class="row row-centered">
+          <div class="col-xs-9 col-centered">
+            <div ng-view></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
+
