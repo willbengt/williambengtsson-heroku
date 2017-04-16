@@ -4,3 +4,24 @@
 <p>Best get back to the <a href="/#/">home page</a>.</p>
 
 <p>Tip: going to an incorrect URL will take you to the homepage, <a href="/#/404">Try it!</a></p>
+
+<button type="button" class="btn btn-default" ng-click="callData()">
+  callData
+</button>
+
+<div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>label</th>
+				<th>probability</th>
+			</tr>
+		</thead>
+		<tbody>
+		    <tr data-ng-repeat="result in results">
+			    <td>{{result.label}}</td>
+			    <td>{{result.probability}}</td>
+		    </tr>
+		</tbody>
+	</table>
+</div>
