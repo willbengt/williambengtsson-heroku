@@ -25,6 +25,8 @@ wbApp.config(['$routeProvider',
 
 wbApp.controller('AboutCtrl', ['$http','$scope',function($http,$scope) {
 
+    $scope.loading = true;
+    
     //$scope.callData = function($event){
     $scope.callData = function(){
         //$event.preventDefault();
