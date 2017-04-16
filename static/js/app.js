@@ -25,11 +25,12 @@ wbApp.config(['$routeProvider',
 
 wbApp.controller('AboutCtrl', ['$http','$scope',function($http,$scope) {
 
-    $scope.loading = true;
-    
+    $scope.loading = false;
+
     //$scope.callData = function($event){
     $scope.callData = function(){
         //$event.preventDefault();
+        $scope.loading = true;
         $http({
             method:'GET',
             url:'/ml',
@@ -41,6 +42,8 @@ wbApp.controller('AboutCtrl', ['$http','$scope',function($http,$scope) {
             $scope.results = resp.data;
         },function(error){
             console.log(error);
+        }).finally(function() {
+            $scope.loading = false;
         });
     }
 }]);
