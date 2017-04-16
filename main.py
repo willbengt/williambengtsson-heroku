@@ -1,12 +1,30 @@
-from flask import Flask, send_file
+from flask import Flask, send_file, request, jsonify, render_template
+#from flask_cors import CORS
 from monkeylearn import MonkeyLearn
+from flask_api import FlaskAPI
 import json
 
-app = Flask(__name__)
+app = FlaskAPI(__name__)
+#app = Flask(__name__)
+#CORS(app)
 
 @app.route("/")
 def index():
-    return send_file("templates/index.html")
+    return send_file('templates/index.html')
+
+@app.route('/getData/')
+def getData():
+  return {'name':'roy'}
+
+# @app.route('/Authenticate',methods=['POST'])
+# def Authenticate():
+#     content = request.json
+#     return jsonify({'username':content['username'],'password':content['password']})
+
+# @app.route('/home')
+# def home():
+#   bla = 'blah..blah...'
+#   return render_template('home.html', bla=bla)
 
 @app.route("/ml")
 def ml():
@@ -20,6 +38,8 @@ def ml():
   str3 = str2.replace("u'", "'")
   str4 = str3.replace("'", '"')
   parsed = json.loads(str4)
-  #return json.dumps(parsed, indent=4, sort_keys=True)
-  #return flask.jsonify(parsed)
-  return json.dumps(parsed, sort_keys = True, indent = 4, separators = (',', ': '))
+  return parsed
+
+
+if __name__=="__main__":
+  app.run(debug=True)
