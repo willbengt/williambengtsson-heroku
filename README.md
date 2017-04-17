@@ -13,7 +13,7 @@
 `$ source venv/Scripts/activate`    
 `$ pip install -r requirements.txt`  
 `$ python main.py`  
-In Windows use *venv\Scripts\activate.bat* instead
+In Windows cmd use *venv\Scripts\activate.bat* instead
 
 ## Deployment
 
