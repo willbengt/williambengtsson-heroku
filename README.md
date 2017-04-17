@@ -13,9 +13,9 @@
 #### Run locally
 `$ cd williambengtsson`  
 `$ virtualenv venv`  
-`$ source venv/Scripts/activate`  
-In Windows use *venv\Scripts\activate.bat* instead
-`$ pip install -r requirements.txt`  
+`$ source venv/Scripts/activate`
+In Windows use *venv\Scripts\activate.bat* instead  
+`$ pip install -r requirements.txt` 
 `$ python main.py`  
 
 ## Deployment
