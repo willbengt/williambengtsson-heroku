@@ -11,7 +11,7 @@ $ pip install [package] && pip freeze > requirements.txt
 
 Run locally:
 $ cd williambengtsson-python
-$ virtualenv env
-$ source env/Scripts/activate (Windows: env\Scripts\activate.bat)
+$ virtualenv venv
+$ source venv/Scripts/activate (Windows: venv\Scripts\activate.bat)
 $ pip install -r requirements.txt
 $ python main.py
