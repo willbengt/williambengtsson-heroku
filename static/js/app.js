@@ -2,6 +2,7 @@
 
 var wbApp = angular.module('wbApp', [
  'ngRoute',
+ 'ui.bootstrap'
 ]);
 
 wbApp.config(['$routeProvider',
@@ -47,3 +48,7 @@ wbApp.controller('AboutCtrl', ['$http','$scope',function($http,$scope) {
         });
     }
 }]);
+
+wbApp.controller('NavbarCtrl', function($scope) {
+  $scope.isCollapsed = true;
+});
