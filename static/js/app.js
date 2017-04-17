@@ -12,12 +12,8 @@ wbApp.config(['$routeProvider',
                 templateUrl: '/static/partials/index.html',
             }).
             when('/about', {
-                templateUrl: '../static/partials/about.html',
+                templateUrl: '/static/partials/about.html',
                 controller: 'AboutCtrl'
-            }).
-            when('/home', {
-                templateUrl: '../templates/home.html',
-                controller: 'HomeCtrl'
             }).
             otherwise({
                  redirectTo: '/'
