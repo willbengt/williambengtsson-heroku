@@ -1,7 +1,7 @@
 from flask import Flask, send_file, request, jsonify, render_template
 #from flask_cors import CORS
 from monkeylearn import MonkeyLearn
-from flask_api import FlaskAPI
+from flask.ext.api import FlaskAPI
 import json
 
 app = FlaskAPI(__name__)
